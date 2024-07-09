@@ -1,0 +1,38 @@
+{
+    "devices": [
+      {
+        "id": 1,
+        "name": "Thermostat",
+        "type": "temperature",
+        "priority": "low",
+        "data": [
+          { "timestamp": "2024-06-25T10:00:00Z", "value": 22 },
+          { "timestamp": "2024-06-25T11:00:00Z", "value": 23 },
+          { "timestamp": "2024-06-25T12:00:00Z", "value": 21 }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Power Meter",
+        "type": "power",
+        "priority": "medium",
+        "data": [
+          { "timestamp": "2024-06-25T10:00:00Z", "value": 150 },
+          { "timestamp": "2024-06-25T11:00:00Z", "value": 160 },
+          { "timestamp": "2024-06-25T12:00:00Z", "value": 155 }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Alarm",
+        "type": "alarm",
+        "priority": "high",
+        "data": [
+          { "timestamp": "2024-06-25T10:00:00Z", "value": "inactive" },
+          { "timestamp": "2024-06-25T11:00:00Z", "value": "active" },
+          { "timestamp": "2024-06-25T12:00:00Z", "value": "inactive" }
+        ]
+      }
+    ]
+  }
+  
