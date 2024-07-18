@@ -1,3 +1,5 @@
+// src/components/WelcomePage.jsx
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/WelcomePage.css';
@@ -24,7 +26,7 @@ const WelcomePage = () => {
       <div className="main-content">
         <h1>Welcome to Our Building Management System</h1>
         <div className="button-container">
-          <Link to="/signup" className="btn">Sign Up</Link>
+          <Link to="/initial-signup" className="btn">Sign Up</Link>
           <Link to="/login" className="btn">Log In</Link>
         </div>
         
