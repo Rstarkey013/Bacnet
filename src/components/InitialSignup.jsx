@@ -54,6 +54,7 @@ const ErrorMessage = styled.p`
 const InitialSignup = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
   const [error, setError] = useState('');
   const navigate = useNavigate();
 
@@ -63,6 +64,8 @@ const InitialSignup = () => {
 
     if (password.length < 8 || !passwordRegex.test(password)) {
       setError('Password must be at least 8 characters long and contain at least one numerical value and one special character.');
+    } else if (password !== confirmPassword) {
+      setError('Passwords do not match.');
     } else {
       setError('');
       // Redirect to the next signup step
@@ -87,6 +90,13 @@ const InitialSignup = () => {
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+          required
+        />
+        <Input
+          type="password"
+          placeholder="Confirm Password"
+          value={confirmPassword}
+          onChange={(e) => setConfirmPassword(e.target.value)}
           required
         />
         <Button type="submit">Continue</Button>
