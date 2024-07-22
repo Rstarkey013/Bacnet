@@ -38,7 +38,7 @@ const WelcomePage = () => {
         
         <div className="company-info">
           <h2>About Our Company</h2>
-          <p>We provide top-notch building management solutions that help you monitor and control various aspects of your buildings efficiently. Our products and services are designed to meet the highest standards of quality and performance.</p>
+          <p>We provide top-notch building management solutions that help you monitor and control various aspects of your buildings efficiently. Our products and services are designed to meet the highest standards of quality and performance. I love Gracita</p>
         </div>
         
         <div className="bottom-section">
