@@ -42,7 +42,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     // Fetch data from deployed API
-    axios.get('http://157.245.137.123:3000/devices')
+    axios.get('https://157.245.137.123:3000/devices')
       .then(response => {
         setData(response.data);
         setPriorityItems(response.data.filter(item => item.priority === 'high'));
