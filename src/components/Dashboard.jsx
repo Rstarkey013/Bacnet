@@ -1,5 +1,3 @@
-// src/components/Dashboard.jsx
-
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Sidebar from './Sidebar';
@@ -41,8 +39,8 @@ const Dashboard = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(true);
 
   useEffect(() => {
-    // Fetch data from deployed API
-    axios.get('http://157.245.137.123:3000/devices')
+    // Fetch data from the server using HTTPS
+    axios.get('https://157.245.137.123:3000/devices')
       .then(response => {
         setData(response.data);
         setPriorityItems(response.data.filter(item => item.priority === 'high'));
